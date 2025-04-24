@@ -1,7 +1,72 @@
+/*All common css start*/
 *{
     margin: 0;
     padding: 0;
 }
-h1{
-   color: brown;
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+
+}
+/*All common css End*/
+
+.headerPar{
+    height: 80px;
+    background-color: rgb(241, 147, 6);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+}
+.menu{
+    height: 100px;
+   
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: #fff;
+    padding: 0 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    transition: all linear.4s;
+    position: relative;
+ 
+}
+.menu ul li a::before{
+    height: 2px;
+    width: 50px;
+    background:rgb(6, 169, 19);
+    position: absolute;
+    content:"";
+
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.menu ul li a:hover::before{
+    opacity: 1;
+    visibility: visible;
+
+}
+.menu ul li a:hover{
+    color: teal;
+
+} 
+h2{
+    color: rgb(228, 19, 19);
 }
